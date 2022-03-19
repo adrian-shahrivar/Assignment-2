@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- JQuery / Materialize CSS + JavaScript imports -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <style>
+        #container {
+            padding-left: 300px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        @media only screen and (max-width : 992px) {
+            #container {
+                padding-left: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="menu">
+
+            <ul id="slide-out" class="side-nav fixed show-on-large-only">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Types of Experience<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#work">Work</a></li>
+                                    <li><a href="#technology">Softwares and Tools</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i
+                    class="material-icons">menu</i></a>
+
+            <h3>Adrian Shahrivar</h3>
+
+            <p>Welcome to my Portfolio </p>
+                <br />
+                <img src="Headshot_Adrian (1).png">
+                <p>I am a third year undergraduate student studying User Experience Design at Wilfrid Laurier University. I’m 22 years old from Toronto, Canada.
+
+My passion is in designing for efficiency and usability, and I am a big advocate of designing for change and for the future. I am also a varsity athlete playing for Wilfrid Laurier's Mens Indoor Soccer team.
+            </p>
+            <section id="education" >
+                <h2>Education</h2>
+                <br />
+                <p>I attended Agincourt Collegiate Institute in Scarborough, Ontario before studying User Experience Design at Wilfrid Laurier University. I graduated highschool in 2018, and am expected to graduate university in 2023. I will be taking an extra year of study due to co-op.
+                </p>
+                <img src="for-online-1.jpeg">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </section>
+            <section id="experience" >
+                <h2>Experience</h2>
+                <br />
+                <section id="work" >
+                    <h4>Work Experience</h4>
+                    <p> I've worked for design companies that allowed me to gain experience in designing digital experiences and designing interior decorating.
+                        Highlights of my work experience would include conducting research for a team at the Hospital for Sick Children and designing the interior layout of the Moose Knuckle store in Yorkdale Mall.
+                    </p>
+                </section>
+                <br />
+                <img src="IMG_3827.jpeg">
+                <br />
+                <br />
+                <br />          
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <section id="technology" >
+                    <h4>Softwares and Tools</h4>
+                    <p> As a part of my UX Classes, I learned how to use Adobe Illustrator, Photoshop, InDesign, and many more applications within the Adobe Suites.
+                        I am also able to use Figma at a high degree. I also know how to use the Apple iWork suites, Google suites, AutoCad, and SketchUp.
+                    </p>
+                </section>
+                <br />
+                <img src="Screen Shot 2022-03-18 at 9.34.40 PM.png">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />          
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <section id="contact" >
+                    <h4>Contact</h4>
+                    <p> Let's Work Together! I can be reached at shahrivaradrian@gmail.com
+                    </p>
+                </section>
+            </section>
+        </div>
+
+    </div>
+    <script>
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+
+
+    </script>
+</body>
+
+</html>
